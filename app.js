@@ -24,8 +24,7 @@ formulario.addEventListener('submit', function(e){
     .then(dat=>{
         console.log(dat);
         console.log(typeof(dat));
-        var data=JSON.parse(dat)
-        console.log(data)
+        
         
 
         
@@ -34,6 +33,8 @@ formulario.addEventListener('submit', function(e){
            LLene todos los campos
          </div>`
         }else{
+            var data=JSON.parse(dat)
+            console.log(data)
             var tabla="<table class=table><thead><tr> <th scope=col>#</th><th scope=col>First</th><th scope=col>Last</th><th scope=col>Handle</th></tr></thead><tbody>"
             
             for (var i = 0; i < 9; i++) {
